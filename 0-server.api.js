@@ -9,7 +9,7 @@ exports.forLib = function (LIB) {
         var exports = superExports.forContexts(contexts);
 
         // TODO: Load adapters as needed by declaration
-        exports.adapters["logic.cores"] = require("./for/logic.cores/0-window.api").forLib(LIB);
+        exports.adapters["logic.cores"] = require("./for/logic.cores/0-server.api").forLib(LIB);
         
         return exports;
     }
